@@ -5,6 +5,8 @@ p{
     font-size: 25px;
     font-style: Arial;
 }
-th{
+table, th, td {
+    border: 1px solid black;
     text-align: left;
-}
+
+  }

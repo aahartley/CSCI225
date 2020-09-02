@@ -1,5 +1,10 @@
 /* myStyle.css */
 
 p{
-    color:red;
+    color:black;
+    font-size: 25px;
+    font-style: Arial;
+}
+th{
+    text-align: left;
 }

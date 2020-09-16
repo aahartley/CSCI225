@@ -14,12 +14,12 @@
             <label for=”lname”>User's last name:</label>
             <input type="text" id=”lname” name="lname" placeholder="anonymous" required><br>
             <label for=”mail”>User's email:</label>
-            <input type="email" name="mail" placeholder="name@domain.com"><br>
+            <input type="email" name="mail" id="mail" placeholder="name@domain.com"><br>
             <label for="ratingradio">Would you recommend this website?</label>
-            <input type="radio" name="ratingradio" value="Yes">Yes
-            <input type="radio" name="ratingradio" value="No" unchecked>No<br>
+            <input type="radio" name="ratingradio" id="ratingradio" value="Yes">Yes
+            <input type="radio" name="ratingradio" value="No">No<br>
             <label for="favSite">What is your favorite website?</label><br>
-            <select name="favSite" size=3>
+            <select name="favSite" id="favSite" size=3>
                 <option value="Google">Google</option>
                 <option value="Facebook">Facebook</option>
                 <option value="Twitter">Twitter</option>
@@ -29,7 +29,7 @@
             <label for="rating">Rate this website between 1 and 10:</label>
             <input type="range" id="rating" name="rating" min="1" max="10"><br>
             <label for="comment">Enter comments:</label><br>
-            <textarea name="comment" row="10" cols="20" maxlength="100"></textarea><br>
+            <textarea name="comment" id="comment" cols="20" maxlength="100"></textarea><br>
             <input type="Submit" value="Submit"/>
         </form>
 

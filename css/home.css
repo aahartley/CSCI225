@@ -1,0 +1,207 @@
+/* myStyle.css */
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch&display=swap');
+div.navbar li,div.navbar ul{
+    float: right;
+    margin-right: 10px;
+    color:white;
+    text-align: right;
+    align-items: flex-end;
+    background-color: black;
+
+
+}
+div.navbar #nav{
+    list-style-image: url("../img/icon.png");
+
+}
+div.introduction{
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right:0;
+    align-items: center;
+    visibility: hidden;
+    width:50%
+}
+div.introduction p{
+    margin-top: 100px;
+}
+div.introduction img{
+    position: absolute;
+    width:350px;
+    height: auto;
+    left: 103%;
+    top:10%;
+}
+div.introduction h1{
+    position: absolute;
+    right:105%;
+    top: 5%;
+    visibility: visible;
+    color:pink;
+}
+div.introduction h1:hover ~p{
+    visibility: visible;
+}
+div.introduction h1:hover ~img{
+    visibility: visible;
+}
+div.portfolio{
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 25%;
+    right:0;
+    align-items: center;
+    visibility: hidden;
+    width:50%
+}
+
+div.portfolio h1{
+    position: absolute;
+    top: 80%;
+    right:115%;
+    visibility: visible;
+    color:red;
+    text-shadow:0 4px 4px rgb(196, 29, 37);
+
+    
+}
+div.portfolio ul{
+    float:right;
+    margin-left: 200px;
+}
+div.portfolio h1:hover ~ul{
+    visibility:visible;
+}
+div.assignment{
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 25%;
+    right:0;
+    align-items: center;
+    visibility: hidden;
+    width:50%
+}
+div.assignment h1{
+    position: absolute;
+    top: 50%;
+    right: 112%;
+    visibility: visible;
+    color:green;
+    text-shadow:0 4px 4px rgb(20, 160, 32);
+
+    
+}
+div.assignment h1:hover ~ol{
+    visibility:visible;
+}
+div.schedule{
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 25%;
+    right:0;
+    align-items: center;
+    visibility: hidden;
+    width:50%
+}
+div.schedule h1{
+    position: absolute;
+    right:118%;
+    visibility: visible;
+    color:white;
+    text-shadow:0 4px 4px rgb(236, 230, 236);
+
+    
+}
+div.schedule h1:hover ~table{
+    visibility:visible;
+}
+div.address{
+    position: absolute;
+    top: 25%;
+    bottom: 0;
+    left: 25%;
+    right:25%;
+    visibility: hidden;
+
+}
+div.address #address{
+    position: absolute; 
+    right:110%;
+    top:20%;
+    visibility: visible;
+    color:blue;
+    text-shadow:0 4px 4px rgb(99, 44, 201);
+
+    
+}
+div.address p{
+    text-align: left;
+    margin-left: 300px;
+    border-right: 5px solid pink;
+    border-left: 5px solid pink;
+    border-top: 3px solid pink;
+    border-bottom: 3px solid pink;
+
+}
+div.address a{
+}
+div.address h1:hover ~p{
+    visibility:visible;
+}
+
+
+body{
+    background-image: url("../img/6d24253ef7a13ba68e2e4e8a2ce8931b.jpg");
+}
+p{
+    color:rgb(189, 26, 126);
+    font-size: 25px;
+    font-family: 'Grenze Gotisch', cursive;
+    line-height: 1em;
+    text-align: center;
+}
+p::first-letter{
+    font-size:300%; 
+  }
+ul,li{
+    font-weight: 500;
+    color: hsla(328, 100%, 44%);
+    text-align: left;
+    margin-right: 100px;
+    list-style-position: inside;
+
+}
+ol{
+    text-align: right;
+    float:right;
+    margin-right: 150px;
+    align-items: center;
+}
+h1{
+    text-transform: uppercase;
+    letter-spacing:5px;
+    text-shadow:0 4px 4px rgb(236, 230, 236);
+}
+
+table, th, td {
+    border: 1px solid pink;
+    text-align: left;
+    margin-left: 250px;
+    color:pink;
+  }
+a:hover{
+    color:pink;
+  }
+  a{
+      color:white;
+  }
+  footer{
+      position: fixed;
+      background-color: hotpink;
+  }

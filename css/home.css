@@ -218,7 +218,7 @@ h1{
     text-transform: uppercase;
     letter-spacing:5px;
     text-shadow:0 4px 4px rgb(236, 230, 236);
-    animation: 4s infinite running movecolor;
+    animation:movecolor 4s infinite;
 }
 
 table, th, td {

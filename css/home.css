@@ -238,7 +238,7 @@ a:hover{
       background-color: hotpink;
   }
   @keyframes movecolor{
-    from{color: pink};
-    30%{color: black};
+    from{color: pink;}
+    30%{color: black;}
 }
  

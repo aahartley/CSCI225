@@ -9,6 +9,7 @@ div.navbar li,div.navbar ul{
     background-color: black;
 
 
+
 }
 div.navbar #nav{
     list-style-image: url("../img/icon.png");
@@ -41,12 +42,17 @@ div.introduction h1{
     top: 5%;
     visibility: visible;
     color:pink;
+    transition: width 2s;
 }
 div.introduction h1:hover ~p{
     visibility: visible;
 }
 div.introduction h1:hover ~img{
     visibility: visible;
+}
+div.introduction h1:hover{
+    width: 300px;
+    transform: scale(1,1.5);
 }
 div.portfolio{
     position: absolute;
@@ -66,15 +72,25 @@ div.portfolio h1{
     visibility: visible;
     color:red;
     text-shadow:0 4px 4px rgb(196, 29, 37);
+    transition: width 2s;
 
     
 }
 div.portfolio ul{
     float:right;
     margin-left: 200px;
+    border-right: 5px solid pink;
+    border-left: 5px solid pink;
+    border-top: 3px solid pink;
+    border-bottom: 3px solid pink;
+    box-shadow: 3px 3px pink;
 }
 div.portfolio h1:hover ~ul{
     visibility:visible;
+}
+div.portfolio h1:hover{
+    width: 200px;
+    transform: scale(1,1.5);
 }
 div.assignment{
     position: absolute;
@@ -93,11 +109,16 @@ div.assignment h1{
     visibility: visible;
     color:green;
     text-shadow:0 4px 4px rgb(20, 160, 32);
+    transition: width 2s;
 
     
 }
 div.assignment h1:hover ~ol{
     visibility:visible;
+}
+div.assignment h1:hover{
+    width: 200px;
+    transform: scale(1,1.5);
 }
 div.schedule{
     position: absolute;
@@ -107,19 +128,23 @@ div.schedule{
     right:0;
     align-items: center;
     visibility: hidden;
-    width:50%
 }
 div.schedule h1{
     position: absolute;
-    right:118%;
+    right:112%;
     visibility: visible;
     color:white;
     text-shadow:0 4px 4px rgb(236, 230, 236);
+    transition: width 2s;
 
     
 }
 div.schedule h1:hover ~table{
     visibility:visible;
+}
+div.schedule h1:hover{
+    width: 100px;
+    transform: scale(1,1.5);
 }
 div.address{
     position: absolute;
@@ -137,22 +162,27 @@ div.address #address{
     visibility: visible;
     color:blue;
     text-shadow:0 4px 4px rgb(99, 44, 201);
+    transition: width 2s;
 
     
 }
 div.address p{
     text-align: left;
-    margin-left: 300px;
+    margin-left: 200px;
     border-right: 5px solid pink;
     border-left: 5px solid pink;
     border-top: 3px solid pink;
     border-bottom: 3px solid pink;
 
 }
-div.address a{
-}
+
 div.address h1:hover ~p{
     visibility:visible;
+}
+div.address #address:hover{
+    width:200px;
+    transform: scale(1,1.5);
+
 }
 
 
@@ -167,7 +197,7 @@ p{
     text-align: center;
 }
 p::first-letter{
-    font-size:300%; 
+    font-size:200%; 
   }
 ul,li{
     font-weight: 500;
@@ -187,6 +217,7 @@ h1{
     text-transform: uppercase;
     letter-spacing:5px;
     text-shadow:0 4px 4px rgb(236, 230, 236);
+    animation: 4s infinite running movecolor;
 }
 
 table, th, td {
@@ -204,4 +235,8 @@ a:hover{
   footer{
       position: fixed;
       background-color: hotpink;
+  }
+  @keyframes movecolor{
+      from{color: pink};
+        30%{color: black};
   }

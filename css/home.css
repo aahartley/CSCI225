@@ -213,6 +213,10 @@ ol{
     margin-right: 150px;
     align-items: center;
 }
+@keyframes movecolor{
+    from{color: pink};
+      30%{color: black};
+}
 h1{
     text-transform: uppercase;
     letter-spacing:5px;
@@ -236,7 +240,4 @@ a:hover{
       position: fixed;
       background-color: hotpink;
   }
-  @keyframes movecolor{
-      from{color: pink};
-        30%{color: black};
-  }
+ 

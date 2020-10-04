@@ -155,7 +155,7 @@ div.address{
     visibility: hidden;
 
 }
-div.address #address{
+div.address h1{
     position: absolute; 
     right:110%;
     top:20%;
@@ -179,7 +179,7 @@ div.address p{
 div.address h1:hover ~p{
     visibility:visible;
 }
-div.address #address:hover{
+div.address h1:hover{
     width:200px;
     transform: scale(1,1.5);
 
@@ -187,7 +187,7 @@ div.address #address:hover{
 
 
 body{
-    background-image: url("../img/6d24253ef7a13ba68e2e4e8a2ce8931b.jpg");
+    background-image: url("../img/bg.jpg");
 }
 p{
     color:rgb(189, 26, 126);

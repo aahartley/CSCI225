@@ -152,12 +152,11 @@ div.address{
     bottom: 0;
     left: 25%;
     right:25%;
-    visibility: hidden;
 
 }
 div.address h1{
     position: absolute; 
-    right:110%;
+    right:108%;
     top:20%;
     visibility: visible;
     color:blue;
@@ -166,9 +165,15 @@ div.address h1{
 
     
 }
-div.address p{
+div.address address{
+    position: absolute;
+    visibility: hidden;
+    left:50%;
+
+}
+div.address address{
     text-align: left;
-    margin-left: 200px;
+    margin-right: 100px;
     border-right: 5px solid pink;
     border-left: 5px solid pink;
     border-top: 3px solid pink;
@@ -176,7 +181,7 @@ div.address p{
 
 }
 
-div.address h1:hover ~p{
+div.address h1:hover ~address{
     visibility:visible;
 }
 div.address h1:hover{

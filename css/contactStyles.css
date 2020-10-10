@@ -1,4 +1,27 @@
 /* myStyle.css */
 iframe{
     border:none;
+    border-radius: 25px;
+    padding: 20px;
+    margin-bottom: 75px;
+  
 }
+.form-control-label{
+    font-weight: bold;
+}
+
+
+.container-fluid {
+    margin-top: 50px;
+   
+}
+.mt-n1 {
+    margin-top: -0.25rem !important;
+  }
+.mr-auto{
+  justify-content: flex-start;
+  }
+  a{
+    padding: 0px 10px;
+
+  }

@@ -1,0 +1,64 @@
+<!--Austin Hartley-->
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <title>CSCI225 Conversion page of Austin Hartley</title>
+</head>
+<body>
+    <div class="form">
+
+        <div class="calculator">
+            <label for=”input1”>Unit Conversion Calculator- Length:</label><br>
+            <input type="text" id="input1" name="input1" required/>
+            <select id="measure">
+                <option> foot</option>
+                <option> inch</option>
+                <option>meter</option>
+             </select>
+            =
+            <input type="text" id="input2" name="input2" required/>
+            <select id="measure2">
+                <option> foot</option>
+                <option> inch</option>
+                <option>meter</option>
+            </select>
+            <input id="bt" type="submit" value="submit"/>
+            <script>
+                function conversion(){
+                    var input1 = parseFloat(document.getElementById('input1').value);
+                    var input2 = parseFloat(document.getElementById('input2').value);
+                    var m = document.getElementById('measure').value;
+                    var m2 = document.getElementById('measure2').value;
+                    var con = 0;
+                    if(m=="foot" && m2 =="foot")
+                        con = input1;
+                    if(m=="foot" && m2=="meter")
+                        con = input1/3.280839895;
+                    if(m=="foot" && m2=="inch")
+                        con= input1*12;
+
+                    if(m=="inch" && m2 =="foot")
+                        con=input1/12;
+                    if(m=="inch" && m2=="meter")
+                        con=input1/39.3700787;
+                    if(m=="inch" && m2=="inch")
+                        con=input1;
+
+                    if(m=="meter" && m2 =="foot")
+                        con=input1*3.280839895;
+                    if(m=="meter" && m2=="meter")
+                        con=input1;
+                    if(m=="meter" && m2=="inch")
+                        con =input1*39.37;
+                    document.getElementById('input2').value=con;
+
+                }
+                var fE = document.getElementById('bt');
+                fE.addEventListener("click",conversion);
+                
+
+            </script>
+        </div>
+    </div>
+</body>
+</html>

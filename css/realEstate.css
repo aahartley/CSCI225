@@ -1,0 +1,103 @@
+* {
+    margin:0;
+    padding:0;
+    }
+body{
+    background-image: url("../img/estate.jpg");
+}
+div.inputs{
+    position: absolute;
+    left: 925px;
+    top:200px;
+    background-color: rgb(249, 188, 232);
+    border:none;
+    width:425px;
+    margin:0px auto;
+}
+#nav{
+    top: 0px;
+    list-style-type: none;
+    float: left;
+    background-color: pink;
+    margin: 0 auto;
+    width: 225px;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+#form{
+    visibility: hidden;
+
+}
+div.navbar li{
+    display: inline;
+    flex: 0 0 5%;
+}
+div.navbar input{
+    width: 75px;
+    margin:0px auto;
+    background-color: pink;
+    color: black;
+
+}
+
+label{
+    display:inline-block;
+    width:200px;
+    margin-right:0px;
+    text-align:right;
+    padding: 5px;
+    animation: slide 2s;
+
+    }
+#bt{
+    width:425px;
+    margin:0px auto;
+    background-color:rgb(247, 129, 239);
+    animation: slide 2s;
+
+}
+p{
+    width:425px;
+    margin:0px auto;
+    text-align: center;
+    background-color: rgb(247, 129, 239);
+    animation: slide 2s;
+
+}
+#mp{
+    background-color: transparent;
+    color:white;
+    margin-left: 690px;
+
+
+}
+#test{
+    width:fit-content;
+    margin:0px auto;
+    text-align: center;
+    visibility: hidden;
+    color: black;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin: auto;
+    background-color: pink;
+    margin-left: 750px;
+    animation: slide 2s;
+
+  }
+  th{
+      background-color: rgb(247, 129, 239);
+  }
+  @keyframes slide{
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+     }
+     100% {
+        opacity: 1;
+        transform: translateY(0);
+     }
+  }

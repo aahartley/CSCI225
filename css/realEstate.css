@@ -20,7 +20,7 @@ div.inputs{
     float: left;
     background-color: pink;
     margin: 0 auto;
-    width: 385px;
+    width: 375px;
     flex-wrap: wrap;
     display: flex;
 }
@@ -86,7 +86,7 @@ table, th, td {
     background-color: pink;
     margin-left: 750px;
     animation: slide 2s;
-    padding: 2px;
+    padding: 3px;
 
   }
   th{

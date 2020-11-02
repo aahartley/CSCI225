@@ -20,7 +20,7 @@ div.inputs{
     float: left;
     background-color: pink;
     margin: 0 auto;
-    width: 375px;
+    width: 385px;
     flex-wrap: wrap;
     display: flex;
 }
